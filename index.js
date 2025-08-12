@@ -5,7 +5,7 @@ fullName = 78;
 // console.log(fullName);
 var a = 10;
 
-var fullName = "Rest";
+var fullNameOfUser = "Rest"; // Camel Case
 // console.log(fullName);
 
 var fullname = "Sayeed";
