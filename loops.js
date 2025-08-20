@@ -32,3 +32,4 @@ function iteratorCallback(element, index) {
 arr.forEach(iteratorCallback);
 
 // iteratorCallback(10, 0);
+// iteratorCallback(20, 1);
