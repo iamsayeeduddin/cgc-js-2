@@ -37,4 +37,6 @@ var idx = arr.findIndex((val, idx) => {
   return val === 3;
 });
 
-console.log(idx);
+// console.log(idx);
+
+module.exports = {};
