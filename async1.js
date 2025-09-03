@@ -43,9 +43,19 @@ const multiply = (a, b) => {
 
 // prms.then((res) => console.log(res));
 
-add(10, 30)
-  .then((res) => subtract(res, 5))
-  .then((res2) => multiply(res2, 2))
-  .then((res3) => console.log(res3))
-  .catch((err) => console.log(err))
-  .finally(() => console.log("Promise Ended!"));
+// add(10, 30)
+//   .then((res) => subtract(res, 5))
+//   .then((res2) => multiply(res2, 2))
+//   .then((res3) => console.log(res3))
+//   .catch((err) => console.log(err))
+//   .finally(() => console.log("Promise Ended!"));
+
+// Promise.all([add(0, 30), subtract(10, 5), multiply(10, 2)])
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
+
+// Promise.any([add(0, 30), subtract(10, 5), multiply(10, 2)])
+//   .then((res) => console.log("response", res))
+//   .catch((err) => console.log(err));
+
+module.exports = { add, multiply, subtract };
