@@ -21,7 +21,7 @@
       const addBtn = document.getElementById("addBtn");
       const taskList = document.getElementById("taskList");
 
-      addBtn.addEventListener("click", () => {
+      const addTask = () => {
         const taskText = input.value.trim(); // Capturing Input Value
         if (taskText === "") return; // End the Function if no input value
 
@@ -42,7 +42,15 @@
 
         taskList.appendChild(li);
         input.value = "";
+      };
+
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          addTask();
+        }
       });
+
+      addBtn.addEventListener("click", addTask);
     </script>
   </body>
 </html>
